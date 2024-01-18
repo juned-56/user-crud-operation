@@ -1,0 +1,13 @@
+spring:
+    datasource:
+       url: jdbc:sqlserver://subnetatestserver.database.windows.net:1433;database=azureassignment;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+       username: adminroot
+       password: Admin@12345
+       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.SQLServerDialect
+server:
+  port: 8081 
